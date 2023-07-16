@@ -8,9 +8,21 @@
         <?php the_post_thumbnail( 'large',['class' => 'p-arcive__img'] ); ?>
       <div class="p-arcive__content">
         <h3 class="p-arcive__main"><?php the_title(); ?></h3>
-        <h4><?php the_field('title'); ?></h4>
+        <h4>
+        <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php');
+          if(is_plugin_active( 'advanced-custom-fields/acf.php' )) {
+               the_field('title');
+            } else {
+              echo 'acfプラグインを有効化してください';
+            } ?>
+        </h4>
         <p class="p-arcive__p">
-          <?php the_field('text'); ?>
+        <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php');
+          if(is_plugin_active( 'advanced-custom-fields/acf.php' )) {
+          the_field('text');
+        } else {
+          echo 'acfプラグインを有効化してください';
+        } ?>
         </p>
         <p class="c-DetailButton">詳しく見る</p>
       </div><!--p-arcive__content-->      

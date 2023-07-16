@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link href="<?php echo esc_url( get_template_directory_uri()); ?>/style.css" rel="stylesheet">
+    <link href="<?php echo esc_url( get_template_directory_uri()); ?>/css/style.css" rel="stylesheet">
     <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
     <?php wp_head(); ?>
   </head>
