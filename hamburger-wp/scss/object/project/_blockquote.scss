@@ -1,0 +1,18 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.p-blockquote{
+  width: 90%;
+  background-color: #F5F5F5;
+  padding: 30px 16px 27px 20px;
+  margin: 0 auto;
+    p {
+      color: #3C2A18;
+        @include m.tab{
+          padding-bottom: 61px;
+    }
+  }
+  a{
+    color: rgba(74, 108, 155, 1);
+    text-decoration:underline;
+    }
+}

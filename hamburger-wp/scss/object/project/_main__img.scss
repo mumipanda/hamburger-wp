@@ -1,0 +1,71 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.p-main__img{
+  background-image: url(../img/mainvisual-sp.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 285px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+    @include m.tab{
+      background-image: url(../img/mainvisual-sp@2x.jpg);
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    @include m.pc{
+      background-image: url(../img/mainvisual-pc.jpg);
+      height: 530px;
+    }
+    &.--archive{
+      background-image: url(../img/43.png),url(../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+      background-size: 240%;
+      background-position: 10%;
+        @include m.tab{
+          background-size: cover;
+        }
+          @include m.pc{
+            display: flex;
+            height: 217px;
+          }
+          a{
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 700;
+            padding-left: 1.7em;
+            padding-top: 12px;
+              @include m.tab{
+                padding-top: 10px;
+                padding-left: 1.2rem;
+              }
+              @include m.pc{
+                padding: 10px 0 0 19px;
+               }
+          }
+      }
+  }
+    .p-index__title{
+        font-size: 36px;
+        color: #FFFFFF;
+        padding-left: 0.7em;
+          @include m.tab{
+            padding-left: 2.4em;;
+          }
+          @include m.pc{
+            font-size: 40px;
+            padding-left: 2.3em;
+          }
+    }
+    .p-archive__title{
+        font-size: 36px;
+        color: #FFFFFF;
+        padding: 0 0 0 0.7em;
+          @include m.tab{
+            padding-left: 2.3em;
+          }
+          @include m.pc{
+            font-size: 40px;
+          }
+    }

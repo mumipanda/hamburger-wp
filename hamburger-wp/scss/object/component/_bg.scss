@@ -1,0 +1,26 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.c-bg.is-active{
+  background-color: rgba(0, 0, 0, 0.502);
+  z-index: 100;
+  position: absolute;
+  height: -webkit-fill-available;
+  width: 100%;
+
+  @include m.pc{
+    background-color:rgba(0,0,0,0);
+  }
+}
+
+.c-bg__black{
+  background-color: rgba(0,0,0,0.28);
+  height: 60%;
+  width: 100%;
+  position: absolute;
+    @include m.tab{
+      height: 100%;
+    }
+    @include m.pc{
+      width: 61.9%;
+    }
+}

@@ -1,0 +1,52 @@
+@use "../foundation/_mixin.scss" as m;
+
+footer{
+  background-image: url(../img/footer.png);
+  background-size: cover;
+  position: relative;
+}
+
+.l-footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18px;
+    @include m.tab{
+      padding-top: 30px;
+    }
+    @include m.pc{
+      padding-top: 41px;
+    }
+    a,p{
+      font-family: 'M+ 1m';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #FFFFFF;
+    }
+      p{
+        padding: 0 1em 0 1em;
+      }
+}
+.l-footer__copylight{
+  font-family: 'M+ 1m';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 16px;
+  @include m.tab{
+    padding-top: 44px;
+    padding-bottom: 24px;
+
+  }
+  @include m.pc{
+    padding-top: 31px;
+    padding-bottom: 27px;
+  }
+}

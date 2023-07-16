@@ -1,0 +1,12 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.p-ImgList{
+  width: 60%;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+.p-ImgItem{
+  width: 90%;
+  display: block;
+  margin: 0 auto 20px auto;
+}

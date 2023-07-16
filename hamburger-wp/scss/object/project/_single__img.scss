@@ -1,0 +1,18 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.p-single__MainImg{
+  width: 90%;
+  height: 124px;
+  display: flex;
+  margin: 30px auto;
+  object-fit: cover;
+  object-position: 50% 95%;
+    @include m.tab{
+      height: auto;
+    }
+}
+.p-single__img{
+  width: 40%;
+  object-fit: contain;
+  object-position: top;
+}

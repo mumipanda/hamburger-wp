@@ -1,0 +1,33 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.p-ListStyle{
+  padding-top: 28px;
+    li{
+      list-style: none;
+    }
+    .p-list{
+      padding-left: 20px;
+    }
+      @include m.tab{
+        padding-left: 110px;
+      }
+    .p-list__item{
+      padding-left: 38px;
+    }
+    @include m.tab{
+      padding-left: 88px;
+  }
+}
+
+.p-list{
+  padding: 12px 0 17px 40px;
+    @include m.tab{
+      padding: 12px 0 17px 126px;
+    }
+}
+.p-list__item{
+  padding: 0 0 17px 58px;
+    @include m.tab{
+      padding: 0 0 17px 144px;
+  }
+}

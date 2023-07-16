@@ -1,0 +1,21 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.c-headline{
+  color: #3C2A10;
+  left: 5%;
+  position: relative;
+  width: 90%;
+    h2{
+      font-size: 28px;
+      font-weight: 700;
+      padding: 32px 0 25px 0;
+    }
+    h3{
+      font-size: 24px;
+      padding: 36px 0 28px 0;
+    }
+    h4,h5,h6{
+      font-size: 20px;
+      padding-bottom: 34px;
+    }
+}

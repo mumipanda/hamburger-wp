@@ -1,0 +1,49 @@
+@use "../foundation/_mixin.scss" as m;
+
+header{
+  background-color: #FFF7EF;
+  width: 100%;
+  height: 215px;
+  font-family: 'Roboto', sans-serif;
+    nav{
+      color: #707070;
+      position: absolute;
+      right: 2.13%;
+      padding-top: 8px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+        @include m.pc{
+          display: none;
+        }
+        @include m.tab{
+          font-size: 34px;
+          padding-top: 20px;
+        }
+    }
+}
+
+.l-header{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+    @include m.pc{
+      flex-flow:row;
+      justify-content: space-between;
+    }
+      h1{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: #707070;
+          @include m.pc{
+            padding-left: 65px;
+            font-size: 65px;
+            line-height: 75px;
+          }
+      }
+  }

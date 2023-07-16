@@ -1,0 +1,11 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.p-single__grid{
+  display: grid;
+    @include m.tab{
+      grid-template-columns: 50% 50%;
+    }
+    @include m.pc{
+      grid-template-columns: 33% 33% 33%;
+    }
+}

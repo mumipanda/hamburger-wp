@@ -1,0 +1,40 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.c-arrow__contain{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+  color: #707070;
+  margin-top: 62.88px;
+    @include m.tab{
+      margin-top: 107.5px;
+      justify-content: center;
+      margin-bottom: 33px;
+      }
+      @include m.pc{
+        margin-bottom: 65px;
+        margin-top: 151px;
+      }
+    .pages{
+      display: none;
+        @include m.tab{
+          display: block;
+        }
+    }
+}
+.c-arrow{
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 1px solid;
+  transform: rotate(45deg);
+  margin-top: 5px;
+}
+.c-arrow__item{
+  display: flex;
+    position: relative;
+}
+.c-arrow__coment{
+    @include m.tab{
+      display: none;
+    }
+}

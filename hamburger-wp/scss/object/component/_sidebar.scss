@@ -1,0 +1,18 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.c-sidebar{
+  display: none;
+  right:100%;
+  z-index: 200;
+    @include m.pc{
+      width:20%;
+      background-color: #F2EDE9;
+      display: block;
+  }
+}
+
+.c-sidebar.is-active{
+  display: block;
+  right: 0;
+  
+}

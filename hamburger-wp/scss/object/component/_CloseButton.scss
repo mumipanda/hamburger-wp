@@ -1,0 +1,28 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.c-CloseButton{
+  position: relative;
+  font-size: 0;
+}
+
+.c-CloseButton:before, .c-CloseButton::after { 
+  content: "";
+  position: absolute;
+  display: block;
+  right: -230px;
+  width: 6px;
+  height: 45px;
+  background-color: rgb(112, 112, 112);
+  top: -155px;
+    @include m.pc{
+      display: none;
+    }
+}
+
+.c-CloseButton::before {
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+ 
+.c-CloseButton::after {
+  transform: translate(-50%,-50%) rotate(-45deg);
+}

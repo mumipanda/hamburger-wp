@@ -1,0 +1,18 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.c-bold{
+  padding-bottom: 69px;
+  color: #3C2A10;
+  position: relative;
+  left: 5%;
+  width: 90%;
+  padding-top: 31px;
+    @include m.tab{
+      padding-bottom: 149px;
+      padding-top: 61px;
+    }
+    @include m.pc{
+      padding-bottom: 274px;
+    }
+}
+

@@ -1,0 +1,20 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.p-PageNav{
+  display: none;
+    @include m.tab{
+      display: block;
+      padding: 0 32px 0 32px;
+    }
+}
+.p-PageNumbers .page{
+  border: solid 1px #707070;
+  padding: 5px 10px;
+  color: #707070;
+  text-decoration: none;
+  margin: 0 6.5px;
+}
+.p-page__current .current{
+background-color: #3C2B1C;
+color: #FFFFFF
+}

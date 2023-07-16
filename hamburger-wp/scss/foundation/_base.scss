@@ -1,0 +1,28 @@
+@use "../foundation/_mixin.scss" as m;
+
+*{
+  text-decoration: none;
+  color: inherit;
+}
+html{
+  width: 100%;
+  box-sizing:border-box;
+  font-family: 'M PLUS 1', sans-serif;
+}
+
+.f-base{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.f-base__main{
+  width: 100%;
+  @include m.pc{
+    width: 80%;
+  }
+}
+
+body.is-active{
+  position: fixed;
+  width: 100%;
+}

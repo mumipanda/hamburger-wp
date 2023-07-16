@@ -1,0 +1,13 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.p-single__flex{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+    P{
+      display: block;
+      width: 49%;
+      padding-left: 10px;
+      line-height: 23.76px;
+    }
+}

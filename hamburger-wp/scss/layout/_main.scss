@@ -1,0 +1,8 @@
+@use "../foundation/_mixin.scss" as m;
+
+.l-main__content{
+  @include m.tab{
+  display: flex;
+  justify-content: space-evenly;
+  }
+}

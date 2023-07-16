@@ -1,0 +1,16 @@
+@use "../../foundation/_mixin.scss" as m;
+
+.p-single__button{
+  width: 90%;
+  position: static;
+  height: 81px;
+  margin: 30px auto 0px auto;
+  display: block;
+    @include m.tab{
+      width: 429px;
+      height: 104px;
+      margin: 60px 0 0px 0px;
+      position: relative;
+      left: 5%;
+    }
+}
