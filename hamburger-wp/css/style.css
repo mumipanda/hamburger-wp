@@ -1037,7 +1037,7 @@ header .c-search .c-search__input {
 
 .p-table {
   width: 90%;
-  margin: 30px auto;
+  margin: 30px auto 60px auto;
 }
 .p-table td {
   padding-left: 30px;
