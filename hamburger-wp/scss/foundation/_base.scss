@@ -3,6 +3,7 @@
 *{
   text-decoration: none;
   color: inherit;
+  list-style: none;
 }
 html{
   width: 100%;
@@ -17,6 +18,7 @@ html{
 }
 .f-base__main{
   width: 100%;
+  min-height: 1350px;
   @include m.pc{
     width: 80%;
   }

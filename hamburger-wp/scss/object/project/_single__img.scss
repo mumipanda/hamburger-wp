@@ -16,3 +16,7 @@
   object-fit: contain;
   object-position: top;
 }
+.p-single__MainImg +img{
+  width: 100%;
+  margin: 30px auto;
+}

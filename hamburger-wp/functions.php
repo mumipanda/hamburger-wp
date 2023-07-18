@@ -115,23 +115,23 @@
             <p>&lt;/html&gt;</p>
           </div>
           <table  class=\"p-table\" border=\"1\" style=\"border-collapse: collapse\" width=\"90%\">
-            <tr height=\"77px\">
+            <tr>
               <td width=\"40%\">テーブル</td>
               <td width=\"60%\">テーブル</td>
             </tr>
-            <tr height=\"77px\">
+            <tr>
               <td width=\"40%\">テーブル</td>
               <td width=\"60%\">テーブル</td>
             </tr>
-            <tr height=\"77px\">
+            <tr>
               <td width=\"40%\">テーブル</td>
               <td width=\"60%\">テーブル</td>
             </tr>
-            <tr height=\"77px\">
+            <tr>
               <td width=\"40%\">テーブル</td>
               <td width=\"60%\">テーブル</td>
             </tr>
-            <tr height=\"77px\">
+            <tr>
               <td width=\"40%\">テーブル</td>
               <td width=\"60%\">テーブル</td>
             </tr>

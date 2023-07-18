@@ -45,10 +45,10 @@ height: auto;
 }
 
 .p-arcive__content{
-  background-color: #3C2B1C;
-  padding-bottom: 43px;
+  color: #ffffff;
+  display: block;
   width: 90%;
-  margin: 0 auto;
+  margin: 7px auto 40px auto;
     @include m.tab{
       width: 45%;
       margin: 0;

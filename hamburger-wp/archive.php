@@ -1,16 +1,18 @@
 <?php get_header(); ?>
   <main>
-    <div class="p-main__img --archive">
+   <div class="p-main__img --archive">
       <h1 class="p-archive__title">Menu:</h1>
-      <?php if( is_category() ) : ?>
-      <p><?php the_category();?></p>
-      <?php elseif(is_tag('take_out')) :?>
-        <a><?php echo 'take out' ;?></a>
-        <?php elseif(is_tag('eat_in')) :?>
-          <a><?php echo 'eat in' ;?></a> 
-      <?php else: ?>
+      <p> <?php if (is_tag( $take_out ) ){
+        echo 'take out' ;
+      }elseif ( is_tag( $eat_in )){
+         echo 'eat_in';
+        }
+        else{
+          $category = get_the_category(); 
+          echo $category[0]->cat_name;
+        }
+      ;?></p>
 
-      <?php endif; ?>
     </div><!--p-main__img-->
     <div>
       <h2 class="p-archive">小見出しが入ります</h2>

@@ -1,10 +1,12 @@
 @use "../../foundation/_mixin.scss" as m;
 
 .p-PageNav{
-  display: none;
+  width: 100%;
     @include m.tab{
-      display: block;
+      display: flex;
       padding: 0 32px 0 32px;
+      justify-content: center;
+    }
     }
 }
 .p-PageNumbers .page{

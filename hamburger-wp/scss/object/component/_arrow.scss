@@ -15,12 +15,13 @@
         margin-bottom: 65px;
         margin-top: 151px;
       }
-    .pages{
-      display: none;
-        @include m.tab{
-          display: block;
+      p {
+        display: none;
+        padding-right: 10px;
+          @include m.tab{
+            display: block;
+          }
         }
-    }
 }
 .c-arrow{
   width: 0.8rem;
