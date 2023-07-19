@@ -2,17 +2,7 @@
   <main>
    <div class="p-main__img --archive">
       <h1 class="p-archive__title">Menu:</h1>
-      <p> <?php if (is_tag( $take_out ) ){
-        echo 'take out' ;
-      }elseif ( is_tag( $eat_in )){
-         echo 'eat_in';
-        }
-        else{
-          $category = get_the_category(); 
-          echo $category[0]->cat_name;
-        }
-      ;?></p>
-
+      <p> <?php single_term_title();?></p>
     </div><!--p-main__img-->
     <div>
       <h2 class="p-archive">小見出しが入ります</h2>
