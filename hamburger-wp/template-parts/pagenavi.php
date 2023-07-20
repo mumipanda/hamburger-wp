@@ -1,6 +1,6 @@
 <div class="c-arrow__contain">
       <div class="p-PageNav">
-      <p>page</p>
+
       <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php');
           if(is_plugin_active( 'wp-pagenavi/wp-pagenavi.php' )) {
           wp_pagenavi();
